@@ -10,17 +10,14 @@ RUN yum -y groupinstall c-development && \
 		libasan \
 		libubsan \
 		git \
-		meson \
-		ninja-build \
 		libconfuse \
 		libconfuse-devel \
 		cmake \
 		libffi-devel \
 		libgit2-devel \
+		check \
+		check-devel \
 		bats && \
 	yum clean all
-
-COPY install-criterion.sh ./
-RUN bash install-criterion.sh
 
 ENV LD_LIBRARY_PATH=/usr/local/lib64:/usr/local/lib

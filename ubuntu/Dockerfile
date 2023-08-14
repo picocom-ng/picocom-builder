@@ -12,19 +12,15 @@ RUN apt-get update && \
 		libubsan1 \
 		libasan8 \
 		git \
-		meson \
-		ninja-build \
 		libconfuse2 \
 		libconfuse-dev \
 		cmake \
 		libffi-dev \
 		libgit2-dev \
 		pkg-config \
+		check \
 		bats \
 		pandoc \
 		htmldoc \
         && \
 	apt-get clean
-
-COPY install-criterion.sh ./
-RUN bash install-criterion.sh
