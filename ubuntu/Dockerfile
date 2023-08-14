@@ -21,6 +21,8 @@ RUN apt-get update && \
 		libgit2-dev \
 		pkg-config \
 		bats \
+		pandoc \
+		htmldoc \
         && \
 	apt-get clean
 
