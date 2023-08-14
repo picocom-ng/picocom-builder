@@ -11,7 +11,7 @@ jobs:
   build-and-push-image:
     strategy:
       matrix:
-        distro: [ubuntu, fedora]
+        distro: [ubuntu, fedora, alpine]
 
     runs-on: ubuntu-latest
     permissions:
