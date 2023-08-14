@@ -17,6 +17,7 @@ RUN yum -y groupinstall c-development && \
 		libgit2-devel \
 		check \
 		check-devel \
+		gcovr \
 		bats && \
 	yum clean all
 

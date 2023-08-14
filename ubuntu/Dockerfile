@@ -19,6 +19,7 @@ RUN apt-get update && \
 		libgit2-dev \
 		pkg-config \
 		check \
+		gcovr \
 		bats \
 		pandoc \
 		htmldoc \
