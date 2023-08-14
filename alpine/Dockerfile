@@ -1,5 +1,5 @@
 ARG ALPINE_VERSION=3.18
-FROM alpine:${ALPINE_VERSION}
+FROM docker.io/alpine:${ALPINE_VERSION}
 
 RUN apk add \
 	alpine-sdk \
